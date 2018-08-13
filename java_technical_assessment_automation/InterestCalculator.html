@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interest calculator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	<script src="InterestCalculator.js"></script>
+</head>
+<body>
+
+	<div class="container" id="header">
+		<h1>INTEREST CALCULATOR</h1>
+		<div class="well well-sm">
+			<h3>Input data for your interest rate:</h3>
+			<form id="calculator-input-form">
+				<div class="row">
+					<div class="form-group col-sm-2">
+						<label for="age">Age:</label>
+						<input type="text" class="form-control" id="age"/>
+					</div>
+					<div class="form-group col-sm-10">
+						<label for="amount">Amount to invest:</label> 
+						<input type="text" class="form-control" id="amount"/>
+					</div>
+				
+					<div class="form-group">
+						<button class="btn btn-default pull-right" id="btn-calculate">Calculate</button>
+					</div>
+				</div>
+			</form>
+			<div class="alert alert-success alert-dismissible" id="calculator-output-message">
+  				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  				The calculated interest rate is: <strong></strong>
+			</div>
+			<div class="alert alert-danger alert-dismissible" id="calculator-error-message">
+  				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  				<strong>Error: </strong> <span class="error-message"></span>
+			</div>
+			<div class="alert alert-warning alert-dismissible" id="calculator-phone-message">
+  				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  				<strong>Offer! </strong> The maximum amount for this package is 9999. Please input your phone number to receive a special offer!
+  				<form id="special-offer-form">
+
+					<div class="row">
+						<div class="form-group col-sm-8 row">
+						    <label for="phone" class="col-sm-2 col-form-label">Phone #:</label>
+						    <div class="col-sm-6">
+						      <input type="text" class="form-control" id="phone">
+						    </div>
+						  </div>
+						<div class="form-group col-sm-4">
+							<button class="btn btn-default pull-right" id="btn-special-offer">Contact me!</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+<style media="screen" type="text/css">
+	.btn {
+		margin: 0px 15px;
+	}
+	.alert {
+		margin-top: 10px;
+		display: none;
+	}
+</style>
+
+<script>
+
+</script>
+</html>
