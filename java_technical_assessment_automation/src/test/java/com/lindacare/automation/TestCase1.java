@@ -103,12 +103,13 @@ public class TestCase1 {
 		
 		String StrErrorAmount=driver.findElement(By.xpath("//*[@id=\"calculator-error-message\"]/span")).getText();
 		
-		
 		Assert.assertEquals(StrErrorAmount, "The deposit amount must be equal or greater than 100.");
 		
 		System.out.println("Value of error message is :="+StrErrorAmount);
 		
+		//add screenshot
 		takeSnapShot(driver,"D:\\Users\\shokaul\\Desktop\\linda\\screenshots\\TC3erroramount.png");
+		
 	}
 
 	
