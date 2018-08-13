@@ -29,6 +29,8 @@ public class TestCase1 {
 
 		driver.findElement(By.id("age")).sendKeys("16");
 		
+		//call to screenshot function
+		
 		takeSnapShot(driver,"D:\\Users\\shokaul\\Desktop\\linda\\screenshots\\TC1age.png");
 		
 		//click on calculate
@@ -63,6 +65,7 @@ public class TestCase1 {
 		//click on calculate
 		driver.findElement(By.id("btn-calculate")).click();
 		
+		//call to screenshot function
 		takeSnapShot(driver,"D:\\Users\\shokaul\\Desktop\\linda\\screenshots\\TC2calculate1.png");
 		
 		//validate valid message
@@ -89,6 +92,7 @@ public class TestCase1 {
 		driver.findElement(By.id("amount")).clear();
 		driver.findElement(By.id("amount")).sendKeys("98");
 		
+		//call to screenshot function
 		takeSnapShot(driver,"D:\\Users\\shokaul\\Desktop\\linda\\screenshots\\TC3amount2.png");
 		//click on calculate
 		driver.findElement(By.id("btn-calculate")).click();
